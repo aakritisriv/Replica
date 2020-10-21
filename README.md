@@ -1,6 +1,9 @@
-# NGRXProducts
+# REPLICA
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
+Fortune is a simple asset-tank management system built on Angular.  This facilitates users to add, update, modify and delete assets and tanks based on their choices. 
+This application uses angular for frontend, ngrx for state management and C# Webapi.
+
 
 ## Run application
 
