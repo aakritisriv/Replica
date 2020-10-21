@@ -1,0 +1,9 @@
+<div class="card">
+    <div class="card-body">
+        <h4 class="text-center">Are you sure you want to delete?</h4>
+        <button class="btn btn-success m-1" type="submit" (click)="deleteTank(getId)">Yes</button>
+        <button class="btn btn-danger m-1" type="button" (click)="no()">Cancel</button>
+
+    </div>
+</div>
+<div class="loader" *ngIf="isLoading"><img src="../../../../assets/img/loading.gif"></div>

@@ -1,0 +1,852 @@
+@import '_variables';
+
+/**************CUSTOM THEMED DROP-DOWN************************/
+/**Wrap mat-select in a div with class hal-number-dropDown****/
+.hal-number-dropDown {
+  .mat-select {
+    width: 3.5em;
+    height: 1.875em;
+    border: 0.0625rem solid $dark-border-color;
+    margin-left: 0.625em;
+
+    .mat-select-trigger {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      .mat-select-value {
+        max-width: 55%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-right: 0.1875em;
+        font-family: $Univers;
+        font-weight: bold;
+      }
+
+      .mat-select-arrow-wrapper {
+        margin-right: 0.3125em;
+        width: 100%;
+        max-width: 45%;
+
+        .mat-select-arrow {
+          border: 0;
+          width: 1.5rem;
+          height: 1rem;
+          background-image: url('/assets/images/DropArrow.svg');
+          background-repeat: no-repeat;
+          margin-top: 0.4rem;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .mat-option-text {
+    font-family: $Univers;
+    text-align: center;
+  }
+}
+
+.hal-text-dropdown {
+  .mat-select {
+    width: 32.5rem;
+    height: 2.5rem;
+    border: 0.0625rem solid $primary-color;
+    margin-left: 1.5rem;
+
+    .mat-select-placeholder {
+      color: $dark-color;
+      font-family: $Univers-Light;
+    }
+
+    .mat-select-trigger {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      .mat-select-value {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding-right: 0.1875rem;
+        padding-left: 0.75rem;
+        font-family: $Univers;
+      }
+
+      .mat-select-arrow-wrapper {
+        margin-right: 0.3125rem;
+
+        .mat-select-arrow {
+          border: 0;
+          height: 0.5625rem;
+          width: 0.75rem;
+          background-image: url('/assets/images/DropArrow.svg');
+          margin: unset;
+        }
+      }
+    }
+  }
+
+  .error {
+    .mat-select-placeholder {
+      color: $primary-color !important;
+      font-family: $Univers;
+    }
+  }
+
+  .mat-option-text {
+    font-family: $Univers;
+    text-align: left;
+  }
+}
+
+.mat-select-panel {
+  &:not([class*='mat-elevation-z']) {
+    border: 0.0625rem solid $dark-border-color;
+    border-radius: 0rem;
+    box-shadow: none;
+  }
+
+  .mat-option {
+    &.mat-selected:not(.mat-option-multiple) {
+      background-color: $primary-color;
+
+      .mat-option-text {
+        color: $light-color;
+        font-weight: bold;
+      }
+    }
+  }
+  @include custom-scrollbar();
+}
+
+.cdk-overlay-container .cdk-overlay-pane .multi-select-filter-panel {
+  position: absolute; //Added instead of margin-top because margin-top overlaps on
+  top: 2.5em; //dropdown panel and on click event will not work when panel is open.
+  margin-left: 2.5625rem;
+  min-width: 21.375rem !important;
+
+  .mat-pseudo-checkbox {
+    color: $primary-color !important;
+  }
+  .mat-pseudo-checkbox-checked {
+    background-color: $primary-color !important;
+  }
+
+  @include custom-scrollbar();
+}
+.cdk-overlay-container .cdk-overlay-pane .single-select-filter-panel {
+  position: absolute; //Added instead of margin-top because margin-top overlaps on
+  top: 2.5em; //dropdown panel and on click event will not work when panel is open.
+  margin-left: 0.9688rem;
+  min-width: 21.375rem !important;
+
+  @include custom-scrollbar();
+}
+
+/***********************************************/
+
+/*************CUSTOM THEMED DIALOG *************/
+
+.cdk-overlay-plane {
+  margin: auto !important;
+}
+
+//dialog border with solid primary color
+.mat-dialog-container {
+  border: 0.125rem solid $primary-color;
+  margin: 0% !important;
+  padding: 0% !important;
+  transition: none !important;
+  box-shadow: none !important;
+  border-radius: 0% !important;
+
+  .mat-horizontal-content-container {
+    overflow: hidden !important;
+    padding: 0rem !important;
+  }
+}
+
+//dialog button generic
+.dialog-btn {
+  background: $primary-color;
+  width: 9.375rem;
+  height: 2.5rem;
+  border-radius: 0%;
+  color: $light-color;
+  margin: 1.125rem 0rem;
+  font-family: $Univers;
+  font-size: 0.9375rem;
+  line-height: 0.9375rem;
+  text-align: center;
+}
+
+//dialog next button eg: Used in dialog
+.dialog-next-btn {
+  background: $primary-color;
+  border-radius: 0%;
+  color: $light-color;
+  width: 9.375rem;
+  height: 2.5rem;
+  margin: 2.5rem auto 0rem;
+  font-family: $Univers;
+  font-size: 0.9375rem;
+  line-height: 0.9375rem;
+  text-align: center !important;
+
+  .dialog-next-btn-img {
+    margin-left: 0.1875rem;
+    padding-bottom: 0.0625rem;
+    margin-right: 0.0625rem;
+    background-image: url('/assets/images/NextArrow.svg');
+    background-repeat: no-repeat;
+  }
+
+  .mat-button {
+    width: 9.375rem !important;
+    height: 2.5rem !important;
+  }
+}
+
+//dialog icons header to contain back and close buttons. Use it in a div
+.dialog-icons-header {
+  height: 2.5rem;
+
+  .dialog-back-btn {
+    margin-left: 0.3125rem;
+    width: 0.625rem;
+    min-width: unset !important;
+    background-repeat: no-repeat;
+    padding: 0% !important;
+  }
+
+  .dialog-close-btn {
+    min-width: unset !important;
+    background-repeat: no-repeat;
+    padding: 0% !important;
+    padding-right: 0.265625rem !important;
+    float: right;
+    top: 0;
+  }
+}
+//For tooltip
+.hal-tooltip {
+  min-height: 4.95%;
+  max-width: 31.25rem !important;
+  margin-left: 0.625rem !important;
+  border: 0.04375rem solid $primary-color;
+  background-color: $light-color;
+  color: $dark-color !important;
+  font-family: $Univers !important;
+  font-size: 0.9375rem !important;
+  border-radius: 0% !important;
+}
+// .mat-tooltip {
+//     box-sizing: border-box;
+//     height: 70.7px;
+//     width: 274.7px;
+//     border: 0.04375rem solid #CC0000 ;
+//     background-color: white;
+//     color: #43494E !important;
+//     font-family: Univers !important;
+//     font-size: 0.9375rem !important;
+//     line-height: 1.125rem !important;
+//     padding :20px 0rem 0rem 30px !important;
+//     margin-left: 2.5rem !important;
+//     border-radius: 0% !important;
+//       }
+//     .mat-tooltip::after, .mat-tooltip::before {
+//       right: 100% !important;
+//       top: 50% !important;
+//       border: solid transparent !important;
+//       content: " " !important;
+//       height: 0 !important;
+//       width: 0 !important;
+//       position: absolute !important;
+//       pointer-events: none !important;
+//     }
+
+//     .mat-tooltip::after {
+//       border-color: rgba(136, 183, 213, 0) !important;
+//       border-right-color: #88b7d5 !important;
+//       border-width: 30px !important;
+//       margin-top: -30px !important;
+//     }
+//     .mat-tooltip::before {
+//       border-color: rgba(194, 225, 245, 0) !important;
+//       border-right-color: #c2e1f5 !important;
+//       border-width: 36px !important;
+//       margin-top: -36px !important;
+//     }
+//dialog label with top margin 0rem
+.dialog-label {
+  height: 1.4375rem;
+  margin-left: 1.25rem;
+  margin-bottom: 0.3125rem;
+  color: $dark-color;
+  font-family: $Univers-Light;
+  font-size: 1.5625rem;
+  line-height: 1.5625rem;
+}
+
+//dialog required label
+.dialog-label-required::after {
+  color: $primary-color;
+  content: '*';
+}
+
+//dialog label for radio button group. Margin-bottom set to 0 for customizing at component level
+.dialog-label-radio {
+  height: 1.4375rem;
+  margin-left: 1.25rem;
+  color: $dark-color;
+  font-family: $Univers-Light;
+  font-size: 1.5625rem;
+  line-height: 1.5625rem;
+}
+/********************************************************/
+
+/*************CUSTOM THEMED RADIO BUTTON *******************/
+// Custom themed radiobutton for number selection
+// use it on radio-button-group with class hal-radio-button
+.hal-radio-button {
+  .mat-radio-button {
+    margin: 0rem;
+  }
+
+  .mat-radio-container {
+    height: 1.75rem;
+    width: 1.6875rem;
+  }
+
+  .mat-radio-label {
+    margin: 0rem;
+  }
+
+  .mat-radio-label-content {
+    margin-left: 0.71875rem;
+    height: 0.875rem;
+    color: $dark-color;
+    font-family: $Univers-Light;
+    font-size: 0.9375rem;
+    line-height: 0.9375rem;
+    text-align: center;
+    padding: 0rem;
+  }
+
+  .mat-radio-inner-circle {
+    display: none;
+  }
+
+  .mat-radio-outer-circle {
+    display: none;
+  }
+
+  .mat-radio-button.mat-accent.mat-radio-checked {
+    margin-top: 0rem !important;
+    background-image: url('/assets/images/CheckedRadio.svg');
+    background-repeat: no-repeat;
+  }
+
+  .mat-radio-button.mat-accent {
+    margin-top: 0rem !important;
+    background-image: url('/assets/images/RadioBtn.svg');
+    background-repeat: no-repeat;
+  }
+}
+/********************************************************/
+
+/**************CUSTOM THEMED INPUT BOX*******************/
+//input
+.hal-input-box {
+  .mat-input-element {
+    caret-color: $dark-color;
+    height: 2.5rem;
+    width: 24.6875rem;
+    font-size: 0.9375rem;
+    font-family: $Univers-Light;
+    padding: 0rem 1rem;
+    border: 0.0625rem solid $primary-color;
+  }
+}
+
+// For Error or Invalid Value
+.mat-input-element {
+  &.input-error {
+    color: $primary-color;
+    font-family: $Univers;
+  }
+}
+
+/********************************************************/
+
+/**************CUSTOM THEMED MAT FORM FIELD *************/
+
+.hal-form-field-standard {
+  .mat-form-field {
+    margin-left: 1.5rem;
+    font-size: 0.9375rem;
+    line-height: 0.9375rem;
+    font-family: $Univers-Light !important;
+    border: 0.0625rem solid $primary-color;
+    height: 2.5rem;
+    width: 15.3125rem;
+
+    .mat-form-field-wrapper {
+      padding-bottom: 0%;
+      height: 2.5rem;
+
+      .mat-form-field-appearance-standard.mat-form-field-flex {
+        padding-top: 0rem !important;
+      }
+
+      .mat-form-field-flex {
+        padding-top: 0rem !important;
+
+        .mat-form-field-prefix {
+          padding-left: 0.75rem;
+          padding-right: 0.3125rem;
+        }
+
+        .mat-form-field-infix {
+          height: 2.5rem;
+          border: 0rem;
+          padding-top: 0.6875rem;
+        }
+      }
+
+      .mat-form-field-underline {
+        display: none;
+      }
+    }
+  }
+}
+
+/********************************************************/
+
+/************* EDIT ICON & EDIT LINK ***********************/
+
+// Use it on a div wrapping edit icon and edit text
+.edit-link {
+  height: 1.125rem;
+  color: $primary-color;
+  font-family: $Univers-Light;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 1.125rem;
+  text-decoration: underline;
+  text-align: right;
+  margin-right: 1.6875rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.875rem;
+}
+
+// use it on image tag
+.edit-icon {
+  margin-right: 0.8125rem;
+  padding-bottom: 0.125rem;
+}
+
+/********************************************************/
+
+/************* REMOVE LINK ***********************/
+
+// Use it on a div or span wrapping remove text
+.remove-link {
+  height: 0.875rem;
+  color: $primary-color;
+  font-family: $Univers-Light;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 0.9375rem;
+  text-decoration: underline;
+  margin-left: 0rem;
+  cursor: pointer;
+}
+.remove-link-before {
+  height: 0.875rem;
+  color: $primary-color;
+  font-family: $Univers-Light;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 0.9375rem;
+  // margin-left: 1.25rem;
+  cursor: pointer;
+}
+/********************************************************/
+
+/********************************************************/
+/************** CUSTOM THEMED ADD BUTTON ****************/
+.dropdown-add-button {
+  .mat-button {
+    background-image: url('/assets/images/add.svg');
+    background-repeat: no-repeat;
+    background-position: left 0.5rem center;
+    background-color: $secondary-color;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0%;
+    border: 0.0625rem solid $primary-color;
+    margin: 0rem;
+    position: absolute;
+    min-width: 2.5rem !important;
+    height: 2.5rem !important;
+    padding: 0rem !important;
+  }
+}
+/********************************************************/
+
+/********** CUSTOM THEMED MAT SLIDE TOGGLE **************/
+/********************************************************/
+/* use hal-slide-toggle with a div or span to wrap mat-slide-toggle tag */
+
+.hal-slide-toggle {
+  .mat-slide-toggle {
+    vertical-align: top;
+  }
+
+  .mat-slide-toggle-content {
+    height: 0.9375rem;
+    color: $dark-color;
+    font-family: $Univers-Light;
+    font-size: 1rem;
+    line-height: 1rem;
+    vertical-align: 0.1875rem;
+  }
+
+  .mat-slide-toggle-ripple {
+    display: none;
+  }
+
+  .mat-ripple {
+    display: none;
+  }
+
+  .mat-slide-toggle-bar {
+    width: 2.0625rem;
+    margin-left: 0.5rem;
+    margin-right: 0;
+    height: 1.0725rem;
+    background-color: $primary-color;
+  }
+
+  .mat-slide-toggle-thumb {
+    box-shadow: none;
+    height: 0.875rem;
+    width: 0.9375rem;
+    border-radius: 50%;
+  }
+
+  .mat-slide-toggle-thumb-container {
+    position: absolute;
+    z-index: 1;
+    width: 0.9375rem;
+    height: 0.9375rem;
+    top: 0.1rem;
+    left: 0.1rem;
+    transform: translate3d(0, 0, 0);
+    transition: all 80ms linear;
+    transition-property: transform;
+    cursor: pointer;
+  }
+
+  .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb-container {
+    transform: translate3d(0.9rem, 0, 0);
+  }
+
+  .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+    background-color: $light-color;
+  }
+
+  .mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+    background-color: $dark-color;
+  }
+}
+/********* CUSTOM THEMED AUTO COMPLETE INPUT ***********/
+/********************************************************/
+/*Used in dropdown-autocomplete. Customize this at component level
+by wrapping .hal-auto-complete with a new class on a div*/
+.hal-auto-complete {
+  margin-bottom: 2.3125rem;
+  input {
+    height: 2.5rem !important;
+    width: 24.6875rem !important;
+    margin: auto 1.25rem;
+    font-size: 0.9375rem;
+    font-family: $Univers-Light;
+    border: 0.0625rem solid $primary-color;
+    background-image: url('/assets/images/SearchIconPrimary.svg');
+    background-repeat: no-repeat;
+    background-position: left 0.625rem center;
+    padding: 0rem 2.5rem;
+  }
+  &.hal-auto-complete-error {
+    input {
+      font-family: $Univers;
+      color: $primary-color;
+    }
+  }
+}
+
+.mat-autocomplete-panel {
+  &:not([class*='mat-elevation-z']) {
+    border: 0.0625rem solid $dark-border-color;
+    border-radius: 0rem;
+    box-shadow: none;
+  }
+
+  .mat-option {
+    .mat-checkbox-frame {
+      border-color: $primary-color !important;
+    }
+    .mat-checkbox:not(.mat-checkbox-disabled).mat-accent .mat-checkbox-ripple .mat-ripple-element {
+      background-color: $primary-color !important;
+    }
+
+    .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+      background-color: $primary-color !important;
+    }
+  }
+
+  @include custom-scrollbar();
+}
+
+/********************************************************/
+
+/*********** CUSTOM THEMED MINI FAB BUTTONS *************/
+/********************************************************/
+
+.mat-mini-fab.mat-accent.mini-fab-yes {
+  color: $light-color;
+  background: $primary-color;
+  margin: 0.3125rem;
+  margin-right: 0.9375rem !important;
+}
+
+.mat-mini-fab.mat-accent.mini-fab-no {
+  color: $light-color;
+  background: $dark-color;
+  margin: 0.3125rem;
+}
+
+/********************************************************/
+
+/*********** CUSTOM THEMED DATE PICKER ******************/
+
+.mat-calendar-body-cell-content.mat-calendar-body-selected {
+  background-color: $primary-color !important;
+  color: $light-color !important;
+}
+
+.mat-calendar-arrow {
+  border-top-color: $primary-color;
+}
+
+.mat-datepicker-toggle {
+  color: $primary-color;
+}
+
+.mat-datepicker-content .mat-calendar {
+  zoom: 0.85;
+}
+
+.mat-datepicker-content .mat-calendar-next-button,
+.mat-datepicker-content .mat-calendar-previous-button,
+.mat-datepicker-toggle {
+  color: $primary-color;
+}
+/********************************************************/
+
+//caret color
+.mat-input-element {
+  caret-color: $dark-color;
+}
+//Remove stepper stage values from dailog header
+.mat-horizontal-stepper-header-container {
+  display: none !important;
+}
+
+//remove button ripple effect
+.mat-button-ripple.mat-ripple {
+  display: none !important;
+}
+
+// Remove button overlay shadow
+.mat-button-focus-overlay {
+  background-color: transparent !important;
+  opacity: 0 !important;
+}
+
+//remove button focus highlights
+.mat-button:focus {
+  outline: none !important;
+}
+
+//remove icon button focus highlights
+.mat-icon-button:focus {
+  outline: none !important;
+}
+
+//remove flat button focus highlights
+.mat-flat-button:focus {
+  outline: none !important;
+}
+
+//input textbox
+.hal-input-box input {
+  border: 0.0625rem solid $primary-color;
+}
+
+//remove/change(TBD) focus for input
+input:focus {
+  outline: none !important;
+}
+
+//remove focus outline of fab buttons
+.mat-mini-fab:focus {
+  outline: none !important;
+}
+//remove shadow from mini fab buttons
+.mat-mini-fab {
+  box-shadow: none !important;
+}
+
+//mat form input field underline to primary-color
+.mat-form-field-underline {
+  background-color: $primary-color !important;
+}
+
+//mat hint format below the input fields
+.mat-form-field-appearance-legacy .mat-hint {
+  color: $dark-color;
+  font-size: 0.9375rem;
+  font-family: $Univers-Light;
+}
+
+//Errors are shown in place of Placeholders. Change the placeholder styling on error
+.error::-webkit-input-placeholder {
+  color: $primary-color !important;
+  font-family: $Univers;
+}
+.error .mat-select-placeholder {
+  color: $primary-color !important;
+  //font-family: $Univers;
+}
+//set default placeholder color dark
+::-webkit-input-placeholder {
+  color: $dark-color !important;
+  font-family: $Univers-Light;
+}
+
+//feedback status
+.success-text {
+  height: 2rem;
+  color: $dark-color;
+  font-family: $Univers-Light;
+  font-size: 2.1875rem;
+  line-height: 2.1875rem;
+  text-align: center;
+}
+
+.feedback-text {
+  height: 0.875rem;
+  color: $dark-color;
+  font-family: $Univers-Light;
+  font-size: 0.9375rem;
+  line-height: 0.9375rem;
+  text-align: center;
+}
+
+//separator line
+.separator-line {
+  box-sizing: border-box;
+  height: 0.0625rem;
+  width: 22.1875rem;
+  border: 0.03125rem solid $primary-color;
+  text-align: center;
+}
+
+//success icon
+.success-icon {
+  height: 5rem;
+  text-align: center;
+}
+
+// works with display flex on div for Error Icon
+.error-tooltip {
+  margin-left: 0.5rem;
+  margin-top: -0.0625rem;
+}
+
+// info tooltip icon
+.info-tooltip {
+  .mat-icon {
+    height: 1.125rem !important;
+    width: 1.125rem !important;
+  }
+}
+
+// Filter Icon on Page Headers
+.header-filter {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-left: 0.125em;
+  background-color: $primary-color;
+  height: 2.5em;
+  width: 2.5em;
+  cursor: pointer;
+  .mat-icon {
+    width: 1.25em;
+    height: 1.5625em;
+    align-self: center;
+  }
+}
+
+// ************* Filters  ******************
+
+.filters-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 0%;
+  color: $light-color;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: width 0.5s;
+  opacity: 0.9;
+}
+
+.filters-container-show {
+  width: 26.53%;
+}
+
+.filter-header-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 23.875rem;
+}
+
+.filter-clear-all {
+  height: 0.875rem;
+  color: $light-color;
+  font-family: $Univers-Light;
+  font-size: 0.9375rem;
+  margin: 1.3438rem 0rem 0rem 1.125rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.filter-icon {
+  margin: 0.6875rem 0.25rem 0rem 0rem;
+}
+
+// ***********************************

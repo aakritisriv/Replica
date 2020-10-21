@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Remove</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Solstice" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Document-Remove" transform="translate(-704.000000, -236.000000)">
+            <g id="Module" transform="translate(420.000000, 88.000000)">
+                <g id="Remove" transform="translate(285.000000, 149.000000)">
+                    <circle id="radio-1-copy-6" stroke="#43494E" cx="13" cy="13.0043121" r="13"></circle>
+                    <circle id="selected-copy-4" fill="#43494E" cx="13" cy="13.0043121" r="10"></circle>
+                    <text id="X-Copy" font-family="Univers" font-size="16" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="7" y="19.0043121">X</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+<div class="primary-navbar d-flex flex-row align-items-center">
+    <div class="primary-home-link d-flex justify-content-center align-items-center">
+        <img src="assets/img/HomeIcon.svg" id="home-menu">
+    </div>
+
+    <ng-container>
+        <div class="primary-nav-link d-flex flex-row justify-content-center align-items-center">
+            <a id="primary-menu-id" class="active" [routerLink]="['/asset/list']">
+                <span>ASSETS</span>
+
+            </a>
+        </div>
+
+    </ng-container>
+    <ng-container>
+        <div class="settings-icon-container">
+            <img src="assets/img/SettingsIcon.svg" class="settings-icon" id="settings-menu">
+        </div>
+    </ng-container>
+</div>

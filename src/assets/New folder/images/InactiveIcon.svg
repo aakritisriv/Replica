@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Inactive Copy 4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Solstice" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Add-Assets" transform="translate(-778.000000, -197.000000)">
+            <g id="Module" transform="translate(582.000000, 103.000000)">
+                <g id="Inactive-Copy-4" transform="translate(197.000000, 95.000000)">
+                    <circle id="radio-1-copy-6" stroke="#A8AFB5" cx="13" cy="13.0043121" r="13"></circle>
+                    <circle id="selected-copy-4" fill="#A8AFB5" cx="13" cy="13.0043121" r="10"></circle>
+                    <text id="X-Copy" font-family="Univers" font-size="16" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="7" y="19.0043121">X</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

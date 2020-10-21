@@ -1,0 +1,136 @@
+/***********PARTIAL STYLESHEET****************/
+/***********APPLICATION VARIABLES****************/
+
+/***********SIDE PADDING**********************/
+$core-side-padding-length: 2.3125rem;
+$core-vertical-padding-length: 0.625rem;
+/********************************************/
+
+/**************POSITIONING***********************/
+@mixin horizontal-center {
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/**************POSITIONING***********************/
+
+/**************COLORS**************************/
+$dark-color: #43494e;
+$light-color: white;
+$primary-color: #CC0000;
+$secondary-color: #A8AFB5;
+$dark-border-color: #979797;
+$dark-border-sec-color: #666666;
+$active-color: #417505;
+$pending-color: #F5A623;
+$light-background-color: #F9F7F7;
+$disabled-background-color: #ECEFF0;
+$hyperlink-blue: #0A8FA1;
+$required-color: #EB7819;
+$gray-color:#9B9B9B;
+$invalid-error-color: #A117F2;
+/*********************************************/
+
+/*************WIDTHS & HEIGHTS****************/
+$viewport-height: 100vh;
+$viewport-width: 100vw;
+$header-height: 4.6875rem;
+$footer-height: 2.1875rem;
+$navbar-height: 3.4%; // 40px;
+
+$content-width-wide-screen: 85.75rem;
+$wide-screen-min-width: 91.625rem;
+/*********************************************/
+
+/******************FONTS***********************/
+$Univers-Light: 'Univers_45_Light', Fallback, sans-serif !important;
+$Univers: 'Univers_55', Fallback, sans-serif !important;
+$Univers-Italic: 'UniversLTStd-Obl', Fallback, sans-serif !important;
+$Univers_Bold: 'Univers_65_Bold', Fallback, sans-serif !important;
+/*********************************************/
+
+/**************************SCROLLBAR******************/
+@mixin custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 1.0625rem;
+    background-color: $light-color;
+  }
+
+  &::-webkit-scrollbar-track {
+    // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border: 0.0625rem solid $secondary-color;
+    background-color: $light-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    width: 0.9375rem;
+    background-color: $primary-color;
+    border-top: 0.0625rem solid $secondary-color;
+    border-bottom: 0.0625rem solid $secondary-color;
+  }
+}
+
+@mixin custom-scrollbar-chart {
+  &::-webkit-scrollbar {
+    width: 1.0625rem;
+    background-color: $light-color;
+  }
+
+  &::-webkit-scrollbar-track {
+    // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border: 0.0625rem solid $secondary-color;
+    border-right: none;
+    background-color: $light-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    width: 0.9375rem;
+    background-color: $primary-color;
+    border-top: 0.0625rem solid $secondary-color;
+    border-bottom: 0.0625rem solid $secondary-color;
+  }
+}
+
+@mixin no-scroll-bar() { // For Mobile.
+  &::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    height: 0;
+    width: 0;
+  }
+
+  &::-webkit-scrollbar-track {
+    height: 0;
+    width: 0;
+  }
+}
+/******************************************************/
+
+/****************TABLE ITEM CARD**********************/
+$card-min-width: 42em;
+$card-max-height: 9em;
+/*****************************************************/
+
+/*******************OVERFLOW ON TEXT******************/
+@mixin text-overflow-ellipsis {
+  &.text-overflow-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+/*****************************************************/
+
+/*********************NAV LINKS**********************/
+$navlink-height: 1.25rem;
+$navlink-width: 10rem;
+$navlink-separator-width: 0.125rem;
+$navlink-font-size: 0.9375rem;
+$navlink-line-height: 1.1;
+$navlink-font-weight: 200;
+/***************************************************/

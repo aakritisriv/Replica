@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>target</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Solstice" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Field-Data-Capture-CAM/ST" transform="translate(-1264.000000, -371.000000)">
+            <g id="List" transform="translate(63.000000, 180.000000)">
+                <g id="OrderCard5" transform="translate(665.000000, 82.000000)">
+                    <g id="controls" transform="translate(373.000000, 109.000000)">
+                        <g id="capture" transform="translate(107.000000, 1.000000)">
+                            <g id="target" transform="translate(57.000000, 0.000000)">
+                                <circle id="radio-1-copy-6" stroke="#9B9B9B" cx="12" cy="12.0029853" r="9"></circle>
+                                <path d="M12,0 L12,24" id="Line-2" stroke="#979797" stroke-linecap="square"></path>
+                                <path d="M12,0 L12,24" id="Line-2-Copy" stroke="#979797" stroke-linecap="square" transform="translate(12.000000, 12.000000) rotate(90.000000) translate(-12.000000, -12.000000) "></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

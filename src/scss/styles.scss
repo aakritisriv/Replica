@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+/* *************DO NOT PLACE COMPONENT STYLESHEET FILES IN HERE************* */
+/* ******************USE ViewEncapsulation.None INSTEAD********************* */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css'; // temporary theming for angular material
+@import '_core.scss';
+@import '_material.scss';
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/daygrid/main.css';
+@import '~@fullcalendar/bootstrap/main.css';
+@import '~@fullcalendar/timegrid/main.css';
+@import '_scaling.scss';

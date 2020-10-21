@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>info</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Solstice" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Solstice-Settings-Upload" transform="translate(-601.000000, -141.000000)" fill="#A8AFB5">
+            <g id="Module" transform="translate(420.000000, 88.000000)">
+                <g id="info" transform="translate(181.000000, 54.000000)">
+                    <path d="M9.15384615,17.3431686 C4.45942578,17.3431686 0.653846154,13.5375889 0.653846154,8.84316856 C0.653846154,4.14874819 4.45942578,0.343168559 9.15384615,0.343168559 C13.8482665,0.343168559 17.6538462,4.14874819 17.6538462,8.84316856 C17.6538462,13.5375889 13.8482665,17.3431686 9.15384615,17.3431686 Z M9.15384615,16.7135389 C13.5005317,16.7135389 17.0242165,13.1898541 17.0242165,8.84316856 C17.0242165,4.49648303 13.5005317,0.972798189 9.15384615,0.972798189 C4.80716062,0.972798189 1.28347578,4.49648303 1.28347578,8.84316856 C1.28347578,13.1898541 4.80716062,16.7135389 9.15384615,16.7135389 Z" id="radio-1-copy-5" stroke="#979797" fill-rule="nonzero"></path>
+                    <text id="i" font-family="Univers" font-size="15" font-weight="normal">
+                        <tspan x="7" y="14.6923077">i</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

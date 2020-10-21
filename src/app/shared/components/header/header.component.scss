@@ -1,0 +1,109 @@
+@import '../../../../scss/variables';
+:host {
+    display: block;
+    background-color: #CC0000;
+    padding: 0.7em;
+    padding-left: 2.3125em;
+    padding-right: 2.3125em;
+    font-size: 1rem;
+}
+
+.app-container {
+    height: 100%;
+    font-size: 1em;
+    padding-top: 2em;
+    .app-image {
+        height: 2.375em;
+    }
+    .account-name-container {
+        flex: 1;
+        padding: 0 5%;
+        .account-info {
+            font-family: $Univers-Light;
+            font-size: 1.5625em; // 25px;
+            color: $light-color;
+            .account-details {
+                font-size: 0.750em; // 12px;
+                .account-type {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .user-names {
+        font-family: $Univers-Light;
+        font-size: 1.125em; // 18px;
+        color: $light-color;
+        padding-right: 0.625em;
+        line-height: 1;
+    }
+    .user-icon {
+        // margin-right: 21.5px;
+        // margin-right: 2.5%;
+        // height: 44%;
+        height: 2.0625em;
+    }
+    .map-icon {
+        // margin-left: 21.5px;
+        margin-left: 2.5vw;
+        // height: 44%;
+        height: 2.5em;
+        cursor: pointer;
+    }
+    .notification-icon-container {
+        // font-size: 1rem;
+        margin-left: 2.5vw;
+        // margin-right: 1.25rem;
+        position: relative;
+        // padding-top: 5px;
+        .notification-icon {
+            cursor: pointer;
+            height: 2.0625em;
+        }
+        .notifications-total-container {
+            position: absolute;
+            top: 0;
+            right: -.625em;
+            background-color: $dark-color;
+            border-radius: .625em;
+            height: 1.25em;
+            width: 1.25em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .notifications-total {
+            color: $light-color;
+            font-size: .75em;
+        }
+    }
+    .calendar-icon {
+        margin-left: 2.5vw;
+        height: 2.5em;
+        width: 2.5em;
+        border: 1.4px solid $light-color;
+        border-radius: 0.6875em;
+        justify-content: center;
+        //cursor: pointer;
+        .calendar-weekday {
+            font-family: $Univers;
+            color: $light-color;
+            font-size: .65em;
+            font-weight: bold;
+            line-height: 1;
+            padding-top: 1px;
+        }
+        .calendar-monthday {
+            font-family: $Univers-Light;
+            color: $light-color;
+            font-size: 1.125em;
+            line-height: 1;
+        }
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .app-image {
+        width: 50%;
+    }
+}

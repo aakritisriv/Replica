@@ -1,0 +1,71 @@
+<!-- <div class="card">
+    <div class="card-body">
+        <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="productName">Product Name</label>
+                <input type="text" class="form-control" name="name" required formControlName="name" id="productName" placeholder="Name">
+            </div>
+            <div class="mb-3 form-group">
+                <label for="productDescription">Description</label>
+                <textarea class="form-control" id="productDescription" name="description" required formControlName="type" placeholder="Product Description"></textarea>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="productPrice">Price</label>
+                    <input type="text" class="form-control" name="price" required formControlName="field" id="productPrice" placeholder="Example: $25.00">
+                </div>
+
+            </div>
+
+            <button class="btn btn-success m-1" type="submit" [disabled]="editForm.invalid">Modify & Save</button>
+        </form>
+    </div>
+</div>
+
+<div class="loader" *ngIf="isloading"><img src="../../../assets/img/loading.gif"></div> -->
+
+<div class="card">
+    <div class="card-body">
+
+        <h3 class="text-center">Edit Asset</h3>
+        <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+            <div class="form-group row">
+                <div class="col-lg-12">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Asset Name</mat-label>
+                        <input required matInput name="name" formControlName="name">
+                    </mat-form-field>
+                </div>
+
+            </div>
+
+            <div class="form-group row">
+                <div class="col-lg-12">
+
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Asset Type</mat-label>
+                        <input required type="text" placeholder="Select type" aria-label="Type" matInput name="type" formControlName="type" [matAutocomplete]="auto">
+                        <mat-autocomplete #auto="matAutocomplete">
+                            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                                {{option}}
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+                </div>
+
+
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-12">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Tank Field</mat-label>
+                        <input required matInput name="field" formControlName="field">
+                    </mat-form-field>
+                </div>
+
+            </div>
+            <button class="btn btn-success m-1" type="submit" [disabled]="editForm.invalid"> Modify & Save</button>
+        </form>
+    </div>
+</div>
+<div class="loader" *ngIf="isloading"><img src="../../../assets/img/loading.gif"></div>

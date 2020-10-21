@@ -1,0 +1,287 @@
+@import '../../../scss/variables';
+h3 {
+    color: #CC0000;
+}
+
+div#cdk-overlay-0 {
+    width: 450px !important;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+form-master-control {
+    flex: 1 1 33.333333%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.9375em;
+    margin-top: 0.9375em;
+    margin-bottom: 0.9375em;
+    align-items: flex-end;
+    &.filter-container {
+        padding: 0 2em 0 0;
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+    .content-remove-btn {
+        width: 1.25em;
+        height: 1.25em;
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    &.extra-small {
+        flex-basis: 20%;
+    }
+    &.tiny {
+        flex-basis: 10%;
+    }
+    &.no-size {
+        flex-basis: 0%;
+    }
+    &.small_new {
+        flex-basis: 25%;
+    }
+    &.large {
+        flex-basis: 50%;
+    }
+    &.extra-large {
+        flex-basis: 66.666666%;
+    }
+    &.full-row {
+        flex-basis: 100%;
+    }
+    &.option-2-spacing {
+        padding: 0;
+        margin: 0.625em 0;
+    }
+    .control-container-2 {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        &.secondary-control {
+            width: 33.333333%;
+            min-width: 6.5em;
+        }
+        &.flex-direct-row {
+            flex-direction: row;
+            align-items: center;
+        }
+        .control-header {
+            display: flex;
+            padding-bottom: 0.5em;
+            align-items: center;
+            &.flex-basis-two-thirds {
+                flex: 1 1 67.77777%;
+            }
+            .alert-icon {
+                margin-left: 0.5em;
+                width: 1.625em;
+                height: 1.625em;
+            }
+            .info-icon {
+                margin-left: 0.25em;
+                width: 1.125em;
+                height: 1.125em;
+            }
+            .control-label {
+                font-size: 1.5625em;
+                font-family: $Univers-Light;
+                line-height: 1;
+                color: $dark-color;
+                &.required {
+                    color: $primary-color;
+                }
+            }
+        }
+        .filter-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5625em;
+            .filters-label {
+                font-size: 1.125em;
+                font-family: $Univers-Light;
+                line-height: 1.0625em;
+                color: $light-color;
+            }
+        }
+        .control-link {
+            display: flex;
+            border: none;
+            height: 2.5em;
+            align-items: center;
+            padding: 0;
+            min-width: unset;
+            align-self: flex-end;
+        }
+        .control-main {
+            display: flex;
+            border: 0.0625em solid $primary-color;
+            height: 2.5em;
+            align-items: center;
+            padding-left: 0.6875em;
+            &.primary {
+                min-width: 12.5em;
+            }
+            &.filter-control {
+                height: 2.5rem;
+                .mat-input-element {
+                    flex: 1;
+                    margin-top: 0.0625em;
+                    font-family: $Univers-Light;
+                    color: $light-color;
+                    padding-left: 0.5em;
+                    font-size: 0.9375rem;
+                }
+            }
+            &.filterable-small {
+                min-width: 7.5rem;
+                height: 2.5rem;
+            }
+            &.with-control-option-2 {
+                flex: 1 1 33.333333%;
+                min-width: unset;
+                padding: 0;
+                input {
+                    text-align: center;
+                }
+            }
+            &:not(.filter-control):hover {
+                border-color: $dark-color;
+                border-width: 0.125em;
+            }
+            &:not(.filter-control).input-focused {
+                outline: none;
+                border-color: $dark-color;
+                border-width: 0.125em;
+            }
+            &.disabled-control {
+                background-color: $disabled-background-color;
+            }
+            &.add-button-present {
+                border-right: none;
+            }
+            &.no-border-and-padding {
+                border: none;
+                padding: 0;
+            }
+            &.remove-text {
+                // border: none;
+                // padding: 0;
+                min-width: 8.5em !important;
+            }
+            &.remove-btn-position {
+                border: none;
+                min-width: 3em;
+                padding: 0;
+            }
+            &.clickable {
+                cursor: pointer;
+            }
+            input {
+                &.clickable {
+                    cursor: pointer;
+                }
+                &.error-text {
+                    color: $primary-color;
+                    font-weight: bold;
+                }
+                @include text-overflow-ellipsis();
+            }
+            .mat-select {
+                display: flex;
+                .mat-select-trigger {
+                    display: flex;
+                    .mat-select-value {
+                        display: flex;
+                        align-items: center;
+                        max-width: 100%;
+                        .mat-select-placeholder {
+                            font-family: $Univers-Light;
+                            color: $dark-color;
+                        }
+                    }
+                    .mat-select-arrow-wrapper {
+                        display: none;
+                    }
+                }
+            }
+            .search-icon {
+                width: 1.25em;
+                height: 1.25em;
+                margin-right: 0.5em;
+            }
+            .drop-down-icon {
+                width: 0.75em;
+                margin-right: 1em;
+                cursor: pointer;
+            }
+            .arrow-wrapper {
+                .drop-down-icon {
+                    cursor: pointer;
+                    position: relative;
+                    padding: 0.8rem;
+                    height: 100%;
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+            .mat-input-element {
+                flex: 1;
+                margin-top: 0.0625em;
+                font-family: $Univers-Light;
+                 :not(.filter-control) {
+                    color: $dark-color;
+                }
+            }
+            .hal-radio-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // margin-left: 1.1875em;
+                // margin-right: 1.1875em;
+                a:focus {
+                    outline: none;
+                    // border: 0.125em solid $dark-color;
+                    // padding: 0.625em;
+                    font-weight: bold;
+                }
+                .radio-button-label {
+                    height: 1.625em;
+                    width: 1.625em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 0.8125em;
+                    border: 1px solid $secondary-color;
+                    margin-bottom: 0;
+                    margin-right: 0.75em;
+                    position: relative;
+                    cursor: pointer;
+                    img {
+                        height: 1.625em;
+                        width: 1.625em;
+                        position: absolute;
+                    }
+                }
+                .radio-label-text {
+                    font-family: $Univers-Light;
+                    font-size: 0.9375em;
+                    line-height: 1;
+                    color: $dark-color;
+                    cursor: pointer;
+                    text-decoration: underline;
+                    &.red-text {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+    .mob-background-light {
+        background-color: #ffffff;
+        color: black !important;
+    }
+}

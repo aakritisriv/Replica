@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 61 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title></title>
+    <desc>Created with Sketch.</desc>
+    <g id="Solstice" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Solstice-Add-Field-Success-Copy" transform="translate(-690.000000, -183.000000)">
+            <g id="Module" transform="translate(545.000000, 156.000000)">
+                <g id="checkedradio-copy" transform="translate(146.000000, 28.000000)">
+                    <!-- <circle id="radio-1-copy-5" stroke="#CC0000" cx="29.5" cy="29.5" r="29.5"></circle> -->
+                    <circle id="selected-copy-3" fill="#000000" cx="29.5" cy="29.5" r="29.5"></circle>
+                     <!--<path d="M28.0881801,35.8255159 L27.2251407,15 L31.8780488,15 L30.9962477,35.8255159 L28.0881801,35.8255159 Z M29.7016886,45 C28.9637236,45 28.3289583,44.7342115 27.7973734,44.2026266 C27.2657885,43.6710417 27,43.0362764 27,42.2983114 C27,41.5603465 27.2657885,40.9287081 27.7973734,40.4033771 C28.3289583,39.8780462 28.9637236,39.6153846 29.7016886,39.6153846 C30.4271456,39.6153846 31.0556571,39.8749192 31.587242,40.3939962 C32.1188269,40.9130733 32.3846154,41.5478386 32.3846154,42.2983114 C32.3846154,43.0487842 32.1157,43.6866765 31.5778612,44.2120075 C31.0400223,44.7373385 30.4146377,45 29.7016886,45 Z" id="!" stroke="#FFFFFF" fill="#FFFFFF"></path> -->
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

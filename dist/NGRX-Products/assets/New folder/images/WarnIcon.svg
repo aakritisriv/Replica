@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>WarnIcon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Solstice" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Treatment-Continuous-Entry" transform="translate(-863.000000, -373.000000)">
+            <g id="Module" transform="translate(353.000000, 126.000000)">
+                <g id="Treatment-KPIs" transform="translate(508.000000, 210.000000)">
+                    <g id="Selections" transform="translate(3.000000, 37.000000)">
+                        <g id="WarnIcon">
+                            <g id="checkedradio-copy-4">
+                                <circle id="radio-1-copy-5" stroke="#CC0000" cx="13" cy="13.9956879" r="13"></circle>
+                                <circle id="selected-copy-3" fill="#CC0000" cx="13" cy="13.9956879" r="10"></circle>
+                            </g>
+                            <path d="M12.5097656,16.7558594 L12.1054688,7 L14.2851562,7 L13.8720703,16.7558594 L12.5097656,16.7558594 Z M13.265625,21.0537109 C12.9199201,21.0537109 12.6225598,20.9292005 12.3735352,20.6801758 C12.1245105,20.4311511 12,20.1337908 12,19.7880859 C12,19.4423811 12.1245105,19.1464856 12.3735352,18.9003906 C12.6225598,18.6542956 12.9199201,18.53125 13.265625,18.53125 C13.6054704,18.53125 13.8999011,18.6528308 14.1489258,18.8959961 C14.3979505,19.1391614 14.5224609,19.4365217 14.5224609,19.7880859 C14.5224609,20.1396502 14.3964856,20.4384753 14.1445312,20.6845703 C13.8925769,20.9306653 13.599611,21.0537109 13.265625,21.0537109 Z" id="!" stroke="#FFFFFF" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

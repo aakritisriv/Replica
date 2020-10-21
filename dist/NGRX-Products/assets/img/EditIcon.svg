@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>editIcon Copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Solstice" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Solstice-Settings" transform="translate(-838.000000, -206.000000)" fill="#CC0000">
+            <g id="Module" transform="translate(520.000000, 103.000000)">
+                <g id="Group" transform="translate(30.000000, 95.000000)">
+                    <g id="Edit-1" transform="translate(288.000000, 5.000000)">
+                        <path d="M14.7511319,6.44199264 C15.082956,6.10988521 15.082956,5.56909618 14.7511319,5.23726736 L12.7629728,3.24908058 C12.43087,2.91697314 11.8900885,2.91697314 11.5582643,3.24908058 L10,4.80708793 L13.1928676,8 L14.7511319,6.44199264 Z M0,14.962495 L0,18 L3.03750497,18 L12,9.03750497 L8.96249503,6 L0,14.962495 Z" id="editIcon-Copy"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

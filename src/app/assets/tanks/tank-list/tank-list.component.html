@@ -1,0 +1,97 @@
+<!-- <div class="row mb-4">
+
+    <div class="col-lg-4 col-md-6 mt-3" *ngFor="let tank of tanks$">
+
+        <div class="container">
+            <div class="content">
+                <h6 class="card-title text-center">{{tank.tankName}}</h6>
+                <hr class="my-4">
+                <p class="card-text"><i>Type</i> : {{tank.tankType}}</p>
+                <p class="card-text">Capacity : {{tank.tankCapacity}}</p>
+                <p class="card-text">Tank Dimensions : {{tank.tankLength}} X {{tank.tankWidth}} X {{tank.tankHeight}}</p>
+                <div>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-info btn-circle btn-sm" (click)="openDialog(tank)"><i class="fa fa-pencil"></i></button>
+                        <button type="button" class="btn btn-danger btn-circle btn-sm" (click)="opendelDialog(tank._id)"><i class="fa fa-trash"></i></button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div> -->
+
+<div class="asset-container">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link " data-toggle="tab" href="#tabs-1" role="tab" (click)="goToassets()">ASSETS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#tabs-2" role="tab">TANKS</a>
+        </li>
+        <!-- <div class="search-container">
+
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+
+        </div> -->
+
+
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane " id="tabs-1" role="tabpanel">
+
+
+        </div>
+        <div class="tab-pane active" id="tabs-2" role="tabpanel">
+            <div class="row tanks-row">
+
+                <div class="col-md-6 items-asset" *ngFor="let tank of tanks$ | async">
+                    <p>{{tank.tankName}}</p>
+                    <hr class="inner-hr">
+                    <div class="d-flex align-items-center flex-grow-1">
+                        <div>
+                            <p class="card-text"><i>Type</i> : {{tank.tankType}}</p>
+                            <p class="card-text">Capacity : {{tank.tankCapacity}}</p>
+                            <p class="card-text">Tank Dimensions : {{tank.tankLength}} X {{tank.tankWidth}} X {{tank.tankHeight}}</p>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-default btn-circle btn-sm" (click)="openDialog(tank)"><i class="fa fa-pencil"></i></button>
+                        <button type="button" class="btn btn-danger btn-circle btn-sm" (click)="opendelDialog(tank._id)"><i class="fa fa-trash"></i></button>
+
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row" *ngIf="!showTanks$">
+                <div class="col-lg-12 col-md-12 mt-3">
+
+                    <div class="container">
+                        <div class="content">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center">Sorry!! No Tanks found</h3>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary" (click)="goToassets()">Go back and add</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+        </div>
+    </div>
+
+</div>

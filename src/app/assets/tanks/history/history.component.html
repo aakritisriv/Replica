@@ -1,0 +1,19 @@
+<div class="row tanks-row">
+
+    <div class="col-md-6 items-asset" *ngFor="let tank of tanks$ | async">
+        <p>{{tank.tankName}}</p>
+        <hr class="inner-hr">
+        <div class="d-flex align-items-center flex-grow-1">
+            <div>
+                <p class="card-text"><i>Type</i> : {{tank.tankType}}</p>
+                <p class="card-text">Capacity : {{tank.tankCapacity}}</p>
+                <p class="card-text">Tank Dimensions : {{tank.tankLength}} X {{tank.tankWidth}} X {{tank.tankHeight}}</p>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+</div>

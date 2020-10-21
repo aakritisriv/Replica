@@ -1,0 +1,60 @@
+<div class="card">
+    <div class="card-body">
+
+        <h3 class="text-center">Create Tank</h3>
+        <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Tank name</mat-label>
+                        <input matInput name="TankName" formControlName="TankName" required>
+                    </mat-form-field>
+                </div>
+
+            </div>
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+
+                    <mat-form-field class="example-full-width">
+                        <input required type="text" placeholder="Select type" aria-label="Type" matInput name="TankType" formControlName="TankType" [matAutocomplete]="auto">
+                        <mat-autocomplete #auto="matAutocomplete">
+                            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                                {{option}}
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+                </div>
+                <div class="col-lg-6">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Capacity</mat-label>
+                        <input required matInput name="TankCapacity" appIntegersOnly formControlName="TankCapacity">
+                    </mat-form-field>
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-4">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Tank Length</mat-label>
+                        <input matInput name="TankLength" formControlName="TankLength" required>
+                    </mat-form-field>
+                </div>
+                <div class="col-lg-4">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Tank Width</mat-label>
+                        <input matInput name="TankWidth" formControlName="TankWidth" required>
+                    </mat-form-field>
+                </div>
+                <div class="col-lg-4">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Tank Height</mat-label>
+                        <input matInput name="TankHeight" formControlName="TankHeight" required>
+                    </mat-form-field>
+                </div>
+            </div>
+            <button class="btn btn-success m-1" type="submit" [disabled]="addForm.invalid"> Save</button>
+        </form>
+    </div>
+</div>
+<div class="loader" *ngIf="isLoading"><img src="../../../../assets/img/loading.gif"></div>

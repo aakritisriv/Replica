@@ -1,0 +1,58 @@
+<div class="row justify-content-center mt-4">
+    <div class="col-lg-8 detail-container">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4 class="text-center">Product View</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-lg-8 mt-4 mb-4" *ngIf="product$ | async as product">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card-body">
+                            <h4 class="card-title"><b>{{product.name}}</b></h4>
+                            <p class="card-text">{{product.description}}
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-12">
+                       
+                        <div class=" mt-4">
+                            <div>
+                                <p>INR {{product.price}}</p>
+                            </div>
+                            <div>
+                                <p>
+                                    No. of Items Available: {{product.quantity}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-4">
+                    <a class="" [routerLink]="['/product/list']" routerLinkActive="router-link-active"><i class="fa fa-arrow-left"></i> Back To List</a>
+                </div>
+                <div class="text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-default" [routerLink]="['/product/edit', product.id]">Modify <i class="fa fa-edit"></i></button>
+                        <button type="button" (click)="deleteProduct(product.id)" class="btn btn-danger">Move to Trash <i class="fa fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

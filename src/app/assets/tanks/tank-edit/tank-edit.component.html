@@ -1,0 +1,100 @@
+<!-- <div class="card">
+    <div class="card-body">
+        <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+
+            <div class="mb-3 form-group">
+                <label for="name">Tank Name</label>
+                <textarea class="form-control" name="tankName" required formControlName="tankName" placeholder=""></textarea>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="capacity">Tank Capacity</label>
+                    <input type="number" class="form-control" name="tankCapacity" required formControlName="tankCapacity" placeholder="Example: 6000.00">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="type">Tank Type</label>
+                    <input type="text" class="form-control" name="tankType" required formControlName="tankType">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="length">Tank Length</label>
+                    <input type="number" class="form-control" name="tankLength" required formControlName="tankLength" placeholder="Example: 67">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="width">Tank Width</label>
+                    <input type="number" class="form-control" name="tankWidth" required formControlName="tankWidth">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="height">Tank Height</label>
+                    <input type="number" class="form-control" name="tankHeight" required formControlName="tankHeight">
+                </div>
+            </div>
+
+            <button class="btn btn-success m-1" type="submit" [disabled]="editForm.invalid"> Save</button>
+        </form>
+    </div>
+</div>
+
+
+<div class="loader" *ngIf="isloading"><img src="../../../assets/img/loading.gif"></div> -->
+<div class="card">
+    <div class="card-body">
+
+        <h3 class="text-center">Edit Tank</h3>
+        <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Tank name</mat-label>
+                        <input matInput name="tankName" formControlName="tankName" required>
+                    </mat-form-field>
+                </div>
+
+            </div>
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+
+                    <mat-form-field class="example-full-width">
+                        <input required type="text" placeholder="Select type" aria-label="Type" matInput name="tankType" formControlName="tankType" [matAutocomplete]="auto">
+                        <mat-autocomplete #auto="matAutocomplete">
+                            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                                {{option}}
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+                </div>
+                <div class="col-lg-6">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Capacity</mat-label>
+                        <input required matInput name="tankCapacity" appIntegersOnly formControlName="tankCapacity">
+                    </mat-form-field>
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-4">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Tank Length</mat-label>
+                        <input matInput name="tankLength" formControlName="tankLength" required>
+                    </mat-form-field>
+                </div>
+                <div class="col-lg-4">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Tank Width</mat-label>
+                        <input matInput name="tankWidth" formControlName="tankWidth" required>
+                    </mat-form-field>
+                </div>
+                <div class="col-lg-4">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Tank Height</mat-label>
+                        <input matInput name="tankHeight" formControlName="tankHeight" required>
+                    </mat-form-field>
+                </div>
+            </div>
+            <button class="btn btn-success m-1" type="submit" [disabled]="editForm.invalid"> Modify & Save</button>
+        </form>
+    </div>
+</div>
+<div class="loader" *ngIf="isLoading"><img src="../../../../assets/img/loading.gif"></div>

@@ -1,0 +1,67 @@
+@import '../../../../scss/variables';
+.primary-navbar {
+    // display: block;
+    // height: $navbar-height;
+    background-color: $dark-color;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    .primary-nav-link {
+        height: $navlink-height;
+        width: $navlink-width;
+        background-color: $dark-color;
+        .active {
+            background-color: $light-color;
+            padding: 0.2em;
+        }
+        a {
+            font-family: $Univers-Light;
+            // height: $navlink-font-size;
+            color: $light-color;
+            font-size: 0.9375em;
+            line-height: 1.2;
+            cursor: pointer !important;
+            &:hover {
+                text-decoration: none;
+            }
+            &.active {
+                color: $dark-color;
+            }
+            .disabled-route {
+                opacity: 0.5;
+            }
+        }
+    }
+    // .primary-navlink-separator {
+    //     height: 1.25em;
+    //     width: 0.125em;
+    //     background-color: $light-color;
+    // }
+    .primary-home-link {
+        margin-right: 1.125em;
+        img {
+            margin-bottom: 0.125em;
+            cursor: pointer;
+            width: 1.8125em;
+        }
+    }
+    // .primary-setting-link {
+    //   margin-left: 16px;
+    //   img {
+    //     margin-bottom: 2px;
+    //     cursor: pointer;
+    //   }
+    // }
+    .settings-icon-container {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .settings-icon {
+            vertical-align: middle;
+            border-style: none;
+            cursor: pointer;
+        }
+    }
+}

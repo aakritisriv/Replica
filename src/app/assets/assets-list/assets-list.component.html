@@ -1,0 +1,95 @@
+<div class="asset-container">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">ASSETS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">TANKS</a>
+        </li>
+        <!-- <div class="search-container">
+
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+
+        </div> -->
+
+
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane active" id="tabs-1" role="tabpanel">
+            <div class="d-flex align-items-center flex-grow-1">
+                Total Assets: {{count}}
+                <div class="account-name-container">
+                    <div class="account-info">
+                        <button type="button" class="btn btn-primary btn-circle btn-sm" (click)="openCreateDialog()"><i class="fa fa-plus"></i> Add New Asset</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+
+                <div class="col-md-6 items-asset" *ngFor="let asset of assets$ | async">
+                    <div class="d-flex align-items-center flex-grow-1">
+                        <img src="../../../assets/img/well.png" width="30" *ngIf="asset.type=='Well'"> <span> <a [routerLink]="'get/'+asset._id">{{asset.name}}</a></span>
+                        <div class="account-name-container">
+                            <div class="account-info">
+                                <button type="button" class="btn btn-default" (click)="openCreateTankDialog(asset._id)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="inner-hr">
+                    <div class="d-flex align-items-center flex-grow-1">
+                        <div>
+                            <p>Type: <b>{{asset.type}}</b></p>
+                            <p>Field: <b>{{asset.field}}</b></p>
+                        </div>
+
+
+                        <div class="account-name-container">
+                            <div class="account-info">
+                                <a [routerLink]="'tank/fetchtank/'+asset._id"> <img src="../../../assets/img/tanker.svg" width="30"></a>
+
+                            </div>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default btn-circle btn-sm" (click)="openDialog(asset)"><i class="fa fa-pencil"></i></button>
+                            <button type="button" class="btn btn-danger btn-circle btn-sm" (click)="opendelDialog(asset._id)"><i class="fa fa-trash"></i></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mb-4">
+                <div class="col-lg-4 col-md-6 mt-3" *ngFor="let asset of assets$ | async">
+
+                    <div class="container">
+                        <div class="content">
+
+
+                            <div>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+
+
+
+                                    <!-- <button type="button" class="btn btn-success btn-circle btn-sm" [routerLink]="['/product/get', product.id]"><i class="fa fa-heart"></i></button>
+                                       
+                                        <button type="button" class="btn btn-danger btn-circle btn-sm" (click)="deleteProduct(product.id)"><i class="fa fa-trash"></i></button> -->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tabs-2" role="tabpanel">
+            <app-history></app-history>
+        </div>
+    </div>
+
+</div>

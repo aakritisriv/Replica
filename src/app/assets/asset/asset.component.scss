@@ -1,0 +1,106 @@
+@import '../../../scss/variables';
+// :host {
+//     display: block;
+//     background-color: #CC0000;
+//     padding: 0.7em;
+//     padding-left: 2.3125em;
+//     padding-right: 2.3125em;
+//     font-size: 1rem;
+// }
+.asset-container {
+    border-right: 1px solid $dark-color;
+    border-bottom: 1px solid $dark-color;
+    border-left: 1px solid $dark-color;
+    ul.nav.nav-tabs {
+        background: #cc0000;
+        margin-top: 8px;
+    }
+    .btn-primary {
+        background: #cc0000;
+        border-radius: 0px;
+        color: #fff;
+        outline: none;
+        border: 1px solid;
+    }
+    .tab-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    hr {
+        border-top: 1px solid #cc0000;
+    }
+    .inner-hr {
+        border-top: 1px solid $dark-color;
+    }
+    .nav-tabs .nav-link.active {
+        color: #fff;
+        background-color: $dark-color;
+        border-color: $dark-color;
+        border-radius: 0px;
+        height: 40px;
+    }
+    a {
+        color: #fff !important;
+    }
+    .btn-default {
+        background: #A8AFB5;
+        color: #fff;
+        border-radius: 0px;
+        border: 1px solid #CC0000;
+    }
+    .btn-danger {
+        background: #CC0000;
+        color: #fff;
+        border-radius: 0px;
+        border: 1px solid #CC0000;
+    }
+    .items-asset {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        max-width: 490px;
+        border: 1px solid #cc0000;
+        overflow: hidden;
+        display: inline-block;
+        span a {
+            color: black !important;
+        }
+    }
+    .account-name-container {
+        flex: 1;
+        padding: 0;
+        .account-info {
+            font-family: $Univers-Light;
+            font-size: 1.5625em; // 25px;
+            color: $light-color;
+            text-align: end;
+            img {
+                padding-right: 3px;
+            }
+            .account-details {
+                font-size: 0.750em; // 12px;
+                .account-type {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+.search-container {
+    float: right !important;
+    position: absolute;
+    right: 16px;
+    width: 50%;
+    input {
+        width: 93%;
+        height: 39px;
+    }
+    button {
+        height: 39px;
+        padding: 0px 10px;
+        border: 1px solid black;
+        background: #CC0000;
+        color: #fff;
+    }
+}

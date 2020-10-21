@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootswatch/dist/cosmo/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/cosmo/bootswatch";
+
+.card {
+    border: 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+    -webkit-box-shadow:0 1px 5px rgba(0, 0, 0, 0.46);
+	-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.detail-container .card-body{
+    padding: 2% 3%;
+}
+
+.detail-container .card {
+    background: #e9ecf0;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

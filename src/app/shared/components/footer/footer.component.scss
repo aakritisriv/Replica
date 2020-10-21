@@ -1,0 +1,18 @@
+@import '../../../../scss/variables';
+:host {
+    padding-left: $core-side-padding-length;
+    padding-right: $core-side-padding-length;
+    background-color: #43494E;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1rem;
+    padding-top: .3125em;
+    padding-bottom: .3125em;
+    .copyright-text {
+        font-family: $Univers-Light;
+        font-size: .75em;
+    }
+}
